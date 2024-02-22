@@ -89,11 +89,12 @@
         <div class="card" id="Contact">
           <fieldset>
             <legend>Contact</legend>
-            <form action="">
+            <form action="https://api.web3forms.com/submit" method="POST">
+              <input type="hidden" name="access_key" value="830bc999-bc76-4016-80bd-59ec134d1585">
               <label for="Name">Name:</label>
-              <input type="text" id="Name" autocomplete="cc-name" />
+              <input type="text" id="Name" name="name" autocomplete="cc-name" />
               <label for="Email">Email:</label>
-              <input type="email" id="Email" autocomplete="email" />
+              <input type="email" id="Email" name="email" autocomplete="email" />
               <textarea
                 name=""
                 id="message"
@@ -101,7 +102,7 @@
                 rows="5"
                 placeholder="Enquiry..."
               ></textarea>
-              <button>Send</button>
+              <button type="submit">Send</button>
             </form>
           </fieldset>
         </div>
